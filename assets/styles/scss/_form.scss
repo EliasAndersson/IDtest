@@ -1,0 +1,54 @@
+.form {
+    background-color: $light-blue;
+    margin-top: 60px;
+    padding: 118px 104px;
+
+    @media (max-width: $breakpoint-sm) {
+        margin-top: 20px;
+        padding: 15px 10px;
+    }
+
+    &-input-container {
+        .form-input-text {
+            background-color: unset;
+            border: unset;
+            border-bottom: 2px solid $light-grey;
+            height: 35px;
+            margin-bottom: 30px;
+            width: 100%;
+
+            @media (max-width: $breakpoint-sm) {
+                margin-bottom: 5px;
+            }
+
+            &::placeholder {
+                font-size: 18px;
+                opacity: 1;
+            }
+        }
+    }
+
+    &-terms {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    &-terms-accept-wrapper {
+        border: 1px solid $dark-grey;
+        height: 50px;
+
+        label {
+            font-size: 14px;
+            margin: unset;
+        }
+    }
+
+    button {
+        background-color: $aquamarine;
+        border: unset;
+        color: $turquoise;
+        font-size: 18px;
+        height: 50px;
+        width: 100%;
+    }
+}

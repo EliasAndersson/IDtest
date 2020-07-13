@@ -1,0 +1,27 @@
+body {
+    font-family: $font-primary;
+    color: $dark-grey;
+}
+
+h1 {
+    font-size: $font-size-h1;
+    font-weight: 400; 
+    line-height: $line-height-h1;
+}
+
+h2 {
+    font-size: $font-size-h2;
+    font-weight: 400;
+    line-height: $line-height-h2;
+}
+
+p {
+    font-size: $font-size-p;
+    font-weight: 400;
+    line-height: $line-height-p;
+}
+
+#page {
+    max-width: $content-width-large;
+    margin: 0 auto;
+}

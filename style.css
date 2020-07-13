@@ -1,0 +1,160 @@
+/*
+ Theme Name: ID kommunikation test theme
+ Author: Elias Andersson
+ Description: Test theme for job application at ID kommunikation
+ Version: 0.0.1
+ Tags: test
+ */
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #333;
+}
+h1 {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 72px;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+}
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#page {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.main-header h1 {
+  margin-top: 43px;
+  margin-bottom: 19px;
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 560px;
+  margin-bottom: 65px;
+}
+@media (max-width: 992px) {
+  .hero {
+    max-height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    max-height: 190px;
+  }
+}
+.hero .hero-text {
+  color: #fff;
+  display: inline-block;
+  font-size: 80px;
+  /* Font family given in design (GT Walsheim) is not available for free, so I've used a light version of the primary font in the project */
+  font-weight: 300;
+  line-height: 90px;
+  margin: 94px 0 0 104px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .hero .hero-text {
+    line-height: 30px;
+    font-size: 30px;
+    margin: 15px 0 0 15px;
+  }
+}
+.hero img {
+  /* Positioning of the image after cropping should in my opinion be centered but to abide by the design, the vertical positioning is slightly off */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -42%);
+  -ms-transform: translate(-50%, -42%);
+  transform: translate(-50%, -42%);
+}
+.form {
+  background-color: rgba(123, 228, 223, 0.1);
+  margin-top: 60px;
+  padding: 118px 104px;
+}
+@media (max-width: 767px) {
+  .form {
+    margin-top: 20px;
+    padding: 15px 10px;
+  }
+}
+.form-input-container .form-input-text {
+  background-color: unset;
+  border: unset;
+  border-bottom: 2px solid #ccc;
+  height: 35px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .form-input-container .form-input-text {
+    margin-bottom: 5px;
+  }
+}
+.form-input-container .form-input-text::placeholder {
+  font-size: 18px;
+  opacity: 1;
+}
+.form-terms {
+  font-size: 12px;
+  line-height: 22px;
+}
+.form-terms-accept-wrapper {
+  border: 1px solid #333;
+  height: 50px;
+}
+.form-terms-accept-wrapper label {
+  font-size: 14px;
+  margin: unset;
+}
+.form button {
+  background-color: #164157;
+  border: unset;
+  color: #7be4df;
+  font-size: 18px;
+  height: 50px;
+  width: 100%;
+}
+.slider-text-heading {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 13px;
+  width: 100%;
+}
+.slider-text-preamble {
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+.slider-text-paragraph {
+  font-size: 18px;
+  line-height: 28px;
+}
+.slider-content {
+  display: none;
+}
+.slider-content.active {
+  display: flex;
+}
+.slider-link {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 16px;
+  border-bottom: 2px solid #ccc;
+}
+.slider-link.active {
+  border-bottom: 2px solid #888;
+}
+@media (max-width: 767px) {
+  .slider-link-wrapper {
+    margin-top: 20px;
+  }
+}

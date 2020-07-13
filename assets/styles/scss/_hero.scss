@@ -1,0 +1,42 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 560px;
+    margin-bottom: 65px;
+    
+    @media (max-width: $breakpoint-md) {
+        max-height: 400px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        max-height: 190px;
+    }
+
+    .hero-text {
+        color: $white;
+        display: inline-block;
+        font-size: $font-size-hero-large;
+        /* Font family given in design (GT Walsheim) is not available for free, so I've used a light version of the primary font in the project */
+        font-weight: 300;
+        line-height: 90px;
+        margin: 94px 0 0 104px;
+        position: relative;
+
+        @media (max-width: $breakpoint-sm) {
+            line-height: 30px;
+            font-size: $font-size-hero-small;
+            margin: 15px 0 0 15px;
+        }
+    }
+
+    img {
+        /* Positioning of the image after cropping should in my opinion be centered but to abide by the design, the vertical positioning is slightly off */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        -webkit-transform: translate(-50%,-42%);
+            -ms-transform: translate(-50%,-42%);
+                transform: translate(-50%,-42%);
+    }
+}

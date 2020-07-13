@@ -1,0 +1,44 @@
+.slider {
+    &-text-heading {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 13px;
+        width: 100%;
+    }
+
+    &-text-preamble {
+        line-height: 50px;
+        margin-bottom: 25px;
+    }
+
+    &-text-paragraph {
+        font-size: $font-size-p;
+        line-height: 28px;
+    }
+
+    &-content {
+        display: none;
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    &-link {
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 16px;
+        border-bottom: 2px solid $light-grey;
+
+        &.active {
+            border-bottom: 2px solid $medium-grey;
+        }
+
+        &-wrapper {
+            @media (max-width: $breakpoint-sm) {
+                margin-top: 20px;
+            }
+        }
+    }
+}

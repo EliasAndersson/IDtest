@@ -1,0 +1,31 @@
+// Font families 
+$font-primary: "IBM Plex Sans", sans-serif;
+
+// Colors - colors for underlines in slider links was unavailable in the design, picked a color that was similar
+$dark-grey: #333;
+$medium-grey: #888;
+$light-grey: #ccc;
+$white: #fff;
+$turquoise: rgb(123, 228, 223);
+$light-blue: rgba($turquoise, 0.1);
+$aquamarine: #164157;
+
+// Default font sizes 
+//TODO: add function rem() for converting pixel values to root em
+$font-size-h1: 52px;
+$font-size-h2: 40px;
+$font-size-p: 18px;
+$font-size-hero-large: 80px;
+$font-size-hero-small: 30px;
+
+//Line-heights
+$line-height-h1: 72px;
+$line-height-h2: 50px;
+$line-height-p: 28px;
+
+// Layout 
+$content-width-large: 1170px;
+
+$breakpoint-sm: 767px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
